@@ -865,7 +865,6 @@ img {
   .home_blob-img {
     width: 100px; /* Adjust image size */
     height: 100px;
-    y: 75px;
   }
   .skills_title {
     font-size: var(--normal-font-size);
@@ -977,7 +976,6 @@ img {
   .home_blob-img {
     width: 100px; /* Adjust image size */
     height: 100px;
-    y: 75px;
   }
   .home_scroll {
     display: block;
