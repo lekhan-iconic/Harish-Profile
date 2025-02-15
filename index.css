@@ -839,7 +839,7 @@ img {
 }
 /*=========== MEdia Queries =====================*/
 /* for small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -850,25 +850,49 @@ img {
   .nav_list {
     column-gap: 0;
   }
+
   .home_container {
-    grid-template-columns: 0.25fr 3fr;
-  }
-  .home_img {
-    margin-left: 0;
-  }
-  .home_blob {
-    width: 450px; /* Increase size */
-    height: 450px;
-  }
-
-  .home_blob-shape {
-    fill: var(--first-color); /* Fill remaining blob with primary color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%; /* Adjust width */
+    max-width: 600px; /* Limit max width */
+    height: 100vh; /* Make it take full viewport height */
+    margin: 0 auto;
   }
 
-  .home_blob-img {
-    width: 100px; /* Adjust image size */
-    height: 100px;
+  .home_content_mob {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
   }
+
+  .home_img img {
+    width: 200px; /* Increase image size */
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .home_data {
+    width: 100%;
+  }
+  .home_social {
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center;
+    gap: 15px; /* Adds space between each icon */
+  }
+
+  .button {
+    padding: 1rem 2rem; /* Increase button size */
+    font-size: 1.2rem;
+  }
+
   .skills_title {
     font-size: var(--normal-font-size);
   }
@@ -886,7 +910,8 @@ img {
     padding: 0 0.5rem;
   }
   .project_img {
-    width: 200px;
+    width: 500px;
+    height: 400px;
   }
 }
 /* for medium devices */
