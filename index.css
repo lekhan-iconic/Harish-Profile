@@ -853,6 +853,9 @@ img {
   .home_container {
     grid-template-columns: 0.25fr 3fr;
   }
+  .home_img {
+    margin-left: 0;
+  }
   .home_blob {
     width: 450px; /* Increase size */
     height: 450px;
@@ -1122,10 +1125,22 @@ img {
     max-width: 1200px;
     margin: 0 auto;
   }
-  .home_content {
+  .home_container {
     margin-top: 0;
   }
-
+  .home_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home_data {
+    padding: 20px;
+    margin-top: 50px;
+  }
+  .home_img {
+    width: 500px;
+    height: 200px;
+  }
   .home_social {
     transform: translateX(-8rem);
   }
